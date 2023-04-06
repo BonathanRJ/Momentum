@@ -1,11 +1,76 @@
+.container_matricula {
+    display: block;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	margin: 50px auto;
+	max-width: 600px;
+	padding: 20px;
+}
+
+.descricao_matricula {
+	color: #333;
+	font-size: 28px;
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.matricula {
+	display: flex;
+	flex-direction: column;
+    margin-top: 15px;
+}
+
+.label {
+	color: #333;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.input-text, .input-select {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+.btn-submit {
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 10px;
+	transition: background-color 0.3s ease;
+	width: 100%;
+}
+
+.btn-submit:hover {
+	background-color: #3e8e41;
+}
+
 .carrossel__titulo {
-    color: var(--laranja);
+    color: var(--vermelho);
     background-color: var(--branco);
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
     padding: 1em 0 0.5em 0;
+}
+
+.descricao_radio{
+    color: var(--vermelho);
+    font-weight: 700;
+    padding: 5px;
+}
+
+.opcoes_radio{
+    font-weight: 350;
 }
 
 .swiper-slide img {
@@ -31,10 +96,24 @@
 .card__botões {
     display: flex;
     justify-content: space-between;
+    align-self: center;
+    
+}
+
+.descricao__imagem{
+    width: 107px;
+    height: 114px;
+    align-self: center;
+
 }
 
 .botões {
     display: flex;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
@@ -47,7 +126,7 @@
 }
 
 .descricao__titulo {
-    color: var(--laranja);
+    color: var(--vermelho);
     font-weight: 700;
 }
 
@@ -67,8 +146,8 @@
 }
 
 .botões__ancora {
-    background-color: var(--laranja);
-    padding: 1em 2.2em;
+    background-color: var(--vermelho);
+    padding: 1em;
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;

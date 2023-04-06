@@ -7,12 +7,9 @@
         <link rel="stylesheet" href="/src/css/reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="/src/css/styles.css">
     </head>
     <body>
@@ -34,12 +31,9 @@
                         <a href="#" class= "lista-menu__link">Alemão</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class= "lista-menu__link">Russo</a>
+                        <a href="#" class= "lista-menu__link">Francês</a>
                     </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class= "lista-menu__link">Mandarim</a>
-                    </li>
-                </ul>
+                 </ul>
                 <img src="/assets/img/Logo2.png" class="container__imagem">
                 <h1 class="container__titulo"><b class="container__titulo--negrito">Momen</b>tum</h1>
             </div>
@@ -60,10 +54,7 @@
                         <a href="#" class= "lista-menu__link">Alemão</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class= "lista-menu__link">Russo</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class= "lista-menu__link">Mandarim</a>
+                        <a href="#" class= "lista-menu__link">Francês</a>
                     </li>
                 </ul>
                 <li class="opcoes__item"><a href="#" class="opcoes__link">Unidades</a></li>
@@ -80,34 +71,67 @@
         <section class="carrossel">
             <h2 class="carrossel__titulo">Metodologia rápida e eficiente</h2>
             <div class="carrossel__container">
-                <div class="swiper">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/assets/img/ApacheKafka.png"></div>
-                        <div class="swiper-slide"><img src="/assets/img/Liderança.png"></div>
-                        <div class="swiper-slide"><img src="/assets/img/Javascript.png"></div>
-                        <div class="swiper-slide"><img src="/assets/img/Guia Front-end.png"></div>
-                        <div class="swiper-slide"><img src="/assets/img/Portugol.png"></div>
-                        <div class="swiper-slide"><img src="/assets/img/Acessibilidade.png"></div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
+               
+                <div class="cards">
                     <div class="card">
                         <div class="card__descricao">
                             <div class="descricao">
-                                <h3 class="descricao__titulo">Qualidade única</h3>
+                                <h3 class="descricao__titulo">Qualidade Nacional</h3>
                                 <h2 class="descricao__titulo-livro">* 1º lugar entre as IES privadas do estado do Rio de Janeiro.</h2>
                                 <h2 class="descricao__titulo-livro">* Conceito 4 na avaliação do MEC/Enade (em uma escada de 1 a 5). </h2>
-                                <p class="descricao__texto">Fale inglês com confiança e conquiste o mundo.</p>
                             </div>
                             <img src="/assets/img/mec.png" class="descricao__imagem">
                         </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card__descricao">
+                            <div class="descricao">
+                                <h3 class="descricao__titulo">Reconhecimento Internacional</h3>
+                                <h2 class="descricao__titulo-livro">* 3º lugar entre as todos os cursos da América Latina.</h2>
+                                <h2 class="descricao__titulo-livro">* Reconhecimento como melhor metodologia de ensino do Brasil. </h2>
+                                <p class="descricao__texto">Fale inglês com confiança e conquiste o mundo.</p>
+                            </div>
+                            <img src="/assets/img/cambridge-logo.png" class="descricao__imagem">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container_matricula">
+                    <h1 class="descricao_matricula">Matricule-se agora e garanta sua vaga!</h1>
+                    <p class="descricao_radio">Para quem está buscando o curso?</p>
+                    <label class="opcoes_radio">
+                        <input type="radio" name="opcao" value="para-mim">
+                        Para mim
+                    </label>
+                    <label class="opcoes_radio">
+                        <input type="radio" name="opcao" value="para-dependente">
+                        Para um dependente
+                    </label>
+                    <form class="matricula">
+                        <label for="nome" class="label">Nome*</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" class="input-text">
+
+                        <label for="email" class="label">E-mail*</label>
+                        <input type="text" id="email" name="email" placeholder="Digite seu e-mail" class="input-text">
+
+                        <label for="phone" class="label">Celular/Whatsapp*</label>
+                        <input type="text" id="phone" name="phone" placeholder="Digite seu Celular" class="input-text">
+                        
+                        <label for="curso" class="label">Curso*</label>
+                        <select id="curso" name="curso" class="input-select">
+                            <option value="ingles">Inglês</option>
+                            <option value="espanhol">Espanhol</option>
+                            <option value="alemao">Alemão</option>
+                            <option value="alemao">Francês</option>
+                        </select>
                         <div class="card__botões">
                             <a href="#" class="botões__ancora">Solicite sua matrícula</a>
                         </div>
-                    </div>
+                        
+                    </form>
                 </div>
+            </div>
         </section>
         
 
@@ -150,31 +174,31 @@
         </section>
 
         <section class="topicos">
-            <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <h2 class="topicos__titulo">NOSSOS DESTAQUES</h2>
             <ul class="topicos__lista">
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">Android</a>
+                    <a href="#" class="topicos__link">Inglês para iniciantes</a>
                 </li>
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">Marketing Digital</a>
+                    <a href="#" class="topicos__link">Inglês no mercado de trabalho</a>
                 </li>
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">Agile</a>
+                    <a href="#" class="topicos__link">Aprendendo com filmes e séries</a>
                 </li>
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">Startups</a>
+                    <a href="#" class="topicos__link">Intercâmbio</a>
                 </li>
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">HTML & CSS</a>
+                    <a href="#" class="topicos__link">Aulas grátis</a>
                 </li>
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">Python</a>
+                    <a href="#" class="topicos__link">EAD</a>
                 </li>
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">OO</a>
+                    <a href="#" class="topicos__link">Curso dinâmico</a>
                 </li>
                 <li class="topicos__item">
-                    <a href="#" class="topicos__link">Java</a>
+                    <a href="#" class="topicos__link">Aprendizagem</a>
                 </li>
             </ul>
         </section>
@@ -182,7 +206,7 @@
         <section class="contato">
             <div class="contato__descricao">
                 <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+                <p class="contato__texto">Receba atualizações de novos cursos, novas metodologias, unidades, entre outros.</p>
             </div>
             <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
         </section>
@@ -192,74 +216,99 @@
         <footer class="rodape">
             <h2 class="rodape__titulo">Grupo Momentum</h2>
             <ul class="lista-rodape">
-                <li class="lista-rodape__titulo">Educação</li>
+                <li class="lista-rodape__titulo">Cursos </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/CasaDoCodigo.svg">
-                    <a href="#" class="lista-rodape__link">Casa do código</a>
+                    <a href="#" class="lista-rodape__link">Cursos de inglês</a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/Caelum.svg">
-                    <a href="#" class="lista-rodape__link">Caelum</a>
-                </li>
-            </ul>
-
-            <ul class="lista-rodape">
-                <li class="lista-rodape__titulo">Educação Online</li>
-                <li class="lista-rodape__item">
-                    <img src="/assets/img/AluraEmpresas.svg">
-                    <a href="#" class="lista-rodape__link">Momentum para Empresas</a>
+                    <a href="#" class="lista-rodape__link">Cursos de espanhol</a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/AluraLATAM.svg">
-                    <a href="#" class="lista-rodape__link">Momentum LATAM</a>
+                    <a href="#" class="lista-rodape__link">Cursos de alemão</a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/AluraStart.svg">
-                    <a href="#" class="lista-rodape__link">Momentum Start</a>
+                    <a href="#" class="lista-rodape__link">Cursos de francês</a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/MusicDot.svg">
-                    <a href="#" class="lista-rodape__link">Music Dot</a>
+                    <a href="#" class="lista-rodape__link">Cursos no exterior</a>
+                </li>
+                <li class="lista-rodape__titulo">Cursos EAD</li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Para crianças</a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/AluraLingua.svg">
-                    <a href="#" class="lista-rodape__link">Momentum Lingua</a>
+                    <a href="#" class="lista-rodape__link">Para adolescentes</a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/PM3.svg">
-                    <a href="#" class="lista-rodape__link">PM3</a>
+                    <a href="#" class="lista-rodape__link">Para adultos</a>
+                </li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Para professores</a>
                 </li>
             </ul>
 
             <ul class="lista-rodape">
-                <li class="lista-rodape__titulo">Comunidade</li>
+                <li class="lista-rodape__titulo">Redes Sociais</li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/HipstersTech.svg">
-                    <a href="#" class="lista-rodape__link">Hipsters ponto Tech</a>
+                    <a href="">
+                        <img src="/assets/img/facebook.png">
+                    </a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/ScubaDev.svg">
-                    <a href="#" class="lista-rodape__link">Scuba Dev</a>
+                    <a href="">
+                        <img src="/assets/img/instagram.png">
+                    </a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/LayersTech.svg">
-                    <a href="#" class="lista-rodape__link">Layers ponto Tech</a>
+                    <a href="">
+                        <img src="/assets/img/twitter.png">
+                    </a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/LikeABoss.svg">
-                    <a href="#" class="lista-rodape__link">Like a Boss</a>
+                    <a href="">
+                        <img src="/assets/img/youtube.png">
+                    </a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/CarreiraSemFronteira.svg">
-                    <a href="#" class="lista-rodape__link">Carreira sem fronteiras</a>
+                    <a href="">
+                        <img src="/assets/img/linkedin.png">
+                    </a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/HipstersJobs.svg">
-                    <a href="#" class="lista-rodape__link">Hipsters ponto jobs</a>
+                    <a href="">
+                        <img src="/assets/img/tiktok.png">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="lista-rodape">
+                <li class="lista-rodape__titulo">Unidades</li>
+                <li class="lista-rodape__item">
+                    <a href="#" class="lista-rodape__link">Rio Comprido</a>
                 </li>
                 <li class="lista-rodape__item">
-                    <img src="/assets/img/GUJ.svg">
-                    <a href="#" class="lista-rodape__link">GUJ</a>
+                    
+                    <a href="#" class="lista-rodape__link">Centro</a>
+                </li>
+                <li class="lista-rodape__item">
+                    
+                    <a href="#" class="lista-rodape__link">Botafogo</a>
+                </li>
+                <li class="lista-rodape__item">
+                    
+                    <a href="#" class="lista-rodape__link">Gávea</a>
+                </li>
+                <li class="lista-rodape__item">
+                    
+                    <a href="#" class="lista-rodape__link">Tijuca</a>
+                </li>
+                <li class="lista-rodape__item">
+                   
+                    <a href="#" class="lista-rodape__link">Madureira</a>
+                </li>
+                <li class="lista-rodape__item">
+                    
+                    <a href="#" class="lista-rodape__link">Méier</a>
                 </li>
             </ul>
         </footer>
